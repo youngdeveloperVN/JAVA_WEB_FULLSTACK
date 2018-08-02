@@ -1,0 +1,9 @@
+/*FOR DIV START*/
+	div{
+		text-transform: uppercase;
+		padding: 20px;
+		border: 1px solid #333;
+		background: #ddd;
+		text-align: center;
+	}
+/*FOR DIV END*/

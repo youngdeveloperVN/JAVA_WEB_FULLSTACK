@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Layout website</title>
+
+<style>
+
+	/*CSS RESET STAT*/
+	*{
+		padding: 0px;
+		margin: 0px;
+		box-sizing: border-box;
+	}
+	/*CSS RESET END*/
+	
+	
+	div {
+    	text-transform: uppercase;
+        text-align : center;
+		padding: 20px;
+		border: 1px solid #333;
+        background: #ddd;
+       
+    }
+    .left{
+    	float: left;
+		width: 70%;
+    }
+    .right{
+    	float: right;
+		width: 30%;
+    }
+    .clear{
+    	clear: both;
+    }
+   
+   body{
+   		width: 100%;
+   }
+   
+   
+   
+   /*MOBILE FIRST*/
+   @media screen and (max-width: 600px) {
+	   .left{
+			width: 100%;
+		}
+		.right{
+			width: 100%;
+		}
+   }
+
+</style>
+
+</head>
+
+<body>
+	<div>head</div>
+    <div>navigator</div>
+    <div class="left">content</div>
+    <div class="right">side-bar</div>
+    <div class="clear">footer</div>
+</body>
+
+</html>

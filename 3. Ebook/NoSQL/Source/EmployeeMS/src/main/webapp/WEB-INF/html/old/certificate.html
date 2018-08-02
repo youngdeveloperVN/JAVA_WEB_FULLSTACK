@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="UTF-8">
+		
+		<title>Ken | EmployeeManager</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link href="css/main.css" rel="stylesheet" type="text/css">
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<link href="css/jquery.dataTables.min.css" rel="stylesheet"></link>
+	    <script src="js/jquery.dataTables.min.js"></script>
+		<link href="css/jquery-ui.min.css" rel="stylesheet"></link>
+		<script src="js/jquery-ui.min.js"></script>	
+		<script type="text/javascript" src="js/css-pop.js"></script>
+		<script src="js/jquery.validate.js"></script>
+		<script src="js/main.js"></script>
+		<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body style=" background-color:#222d32; ">
+		
+		<div class="wrapper">
+			<div class="header">
+				<a href="#" class="logo">
+					<span><b>Manager</span>
+				</a>
+				<div class="nav">
+					<ul>
+					  <li class="dropdown user user-menu">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						  <img src="images/admin.png" class="user-image" alt="User Image"/>
+						  <span class="hidden-xs">Administrator</span>
+						</a>
+						<ul class="dropdown-menu">
+						  <li class="user-header">
+							<img src="images/admin.png" alt="User Image" style="width:95px;border:3px solid;border-radius:50%;"/>
+							<p>
+							  Phan Trung Kien- Web Developer
+							  <small>Member since Nov. 2014</small>
+							</p>
+						  </li>
+						  <li class="user-footer">
+							<div class="pull-right">
+							  <a href="login.html" class="btn" onclick="return confirm('Are you sure?');">Sign out</a>
+							</div>
+						  </li>
+						</ul>
+					  </li>
+					</ul>
+				</div>
+			
+			</div>
+			<div class="clear"></div>
+			<div class="container">
+				<div class="rightbar">
+					<div class="user-panel">
+						<div class="pull-left image">
+						  <img src="images/admin.png" class="img-circle" alt="User Image">
+						</div>
+						<div class="pull-left info">
+						  <p>Administrator</p>
+						  <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+						</div>
+					 </div>
+					 
+					 <ul class="sidebar-menu">
+						<li class="header">MAIN NAVIGATION</li>
+						<li>
+						  <a href="index.html">
+							<i class="glyphicon glyphicon-user"></i> <span>Employee Manager</span></i>
+						  </a>
+						</li>
+						<li>
+						  <a href="certificate.html">
+							<i class="glyphicon glyphicon-list-alt"></i> <span>Qualification Manager</span></i>
+						  </a>
+						</li>
+					  
+					  <li>
+						  <a href="worktime.html">
+							<i class="glyphicon glyphicon-briefcase"></i> <span>Worktime Manager</span>
+						  </a>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="main">
+					<div class="content">
+						<p style="font-size:20px;"> Qualification Manager</p>
+						<div class="table-responsive">    
+							<table id="myTable" border="1" class="table table-hover">
+								<thead>
+									<tr>
+										<th>ID</th>
+										<th>QualDate</th>
+										<th>QualName</th>
+										<th>ORGName</th>
+										<th>ORGAddress</th>
+										<th>IDPerson</th>
+										<th>Action</th>							
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="data">
+										<td>
+											<input type="text" style="display:none;/>
+											<span ">1001</span>
+										</td>
+										<td>
+											<input type="text" style="display:none;/>
+											<span ">2014-06-09</span>
+										</td>
+										<td>
+											<input type="text" style="display:none;/>
+											<span ">Engineer</span>
+										</td>
+										<td>
+											<input type="text" style="display:none;/>
+											<span ">Ha Noi Apptech</span>
+										</td>
+										<td>
+											<input type="text" style="display:none;/>
+											<span ">Ha Noi</span>
+										</td>
+										<td>
+											<input type="text" style="display:none;/>
+											<span ">1</span>
+										</td>
+										<td>
+										    <a href="#" id="button1" class="view" onclick="popup('popUpDiv')"><img src="images/view.png" style="width:16px" alt="View"></a>
+											<a href="#" class="view" onclick="del(this);" ><img src="images/edit.png" style="width:16px" alt="View"></a>
+											<a href="#" class="remove" onclick="del(this);" ><img src="images/delete.png" style="width:16px" alt="Delete"></a>
+											
+										</td>
+									</tr>
+									<tr class="data">
+										<td>
+											<input type="text" style="display:none;/>
+											<span ">1002</span>
+										</td>
+										<td>
+											<input type="text" style="display:none;/>
+											<span ">2015-03-03</span>
+										</td>
+										<td>
+											<input type="text" style="display:none;/>
+											<span ">Engineer</span>
+										</td>
+										<td>
+											<input type="text" style="display:none;/>
+											<span ">PTIT</span>
+										</td>
+										<td>
+											<input type="text" style="display:none;/>
+											<span ">Ha Noi</span>
+										</td>
+										<td>
+											<input type="text" style="display:none;/>
+											<span ">2</span>
+										</td>
+										<td>
+										    <a href="#" id="button1" class="view" onclick="popup('popUpDiv')"><img src="images/view.png" style="width:16px" alt="View"></a>
+											<a href="#" class="view" onclick="del(this);" ><img src="images/edit.png" style="width:16px" alt="View"></a>
+											<a href="#" class="remove" onclick="del(this);" ><img src="images/delete.png" style="width:16px" alt="Delete"></a>
+											
+										</td>
+									</tr>
+									<tr class="data">
+										<td>
+											<input type="text" style="display:none;/>
+											<span ">1003</span>
+										</td>
+										<td>
+											<input type="text" style="display:none;/>
+											<span ">2013-11-11</span>
+										</td>
+										<td>
+											<input type="text" style="display:none;/>
+											<span ">Engineer</span>
+										</td>
+										<td>
+											<input type="text" style="display:none;/>
+											<span ">Apptech</span>
+										</td>
+										<td>
+											<input type="text" style="display:none;/>
+											<span ">Ha Noi</span>
+										</td>
+										<td>
+											<input type="text" style="display:none;/>
+											<span ">3</span>
+										</td>
+										<td>
+										    <a href="#" id="button1" class="view" onclick="popup('popUpDiv')"><img src="images/view.png" style="width:16px" alt="View"></a>
+											<a href="#" class="view" onclick="del(this);" ><img src="images/edit.png" style="width:16px" alt="View"></a>
+											<a href="#" class="remove" onclick="del(this);" ><img src="images/delete.png" style="width:16px" alt="Delete"></a>
+											
+										</td>
+									</tr>
+									<tr class="data">
+										<td>
+											<input type="text" style="display:none;/>
+											<span ">1004</span>
+										</td>
+										<td>
+											<input type="text" style="display:none;/>
+											<span ">2013-10-11</span>
+										</td>
+										<td>
+											<input type="text" style="display:none;/>
+											<span ">Engineer</span>
+										</td>
+										<td>
+											<input type="text" style="display:none;/>
+											<span ">Apptech</span>
+										</td>
+										<td>
+											<input type="text" style="display:none;/>
+											<span ">Ha Noi</span>
+										</td>
+										<td>
+											<input type="text" style="display:none;/>
+											<span ">4</span>
+										</td>
+										<td>
+										    <a href="#" id="button1" class="view" onclick="popup('popUpDiv')"><img src="images/view.png" style="width:16px" alt="View"></a>
+											<a href="#" class="view" onclick="del(this);" ><img src="images/edit.png" style="width:16px" alt="View"></a>
+											<a href="#" class="remove" onclick="del(this);" ><img src="images/delete.png" style="width:16px" alt="Delete"></a>
+											
+										</td>
+									</tr>
+									<tr class="dummy" style="display:none;">
+										<td>
+											<input type="text" class="atb1"/>
+											<span class="d1"></span>
+										</td>
+										<td>
+											<input type="text" class="atb2"/>
+											<span class="d2"></span>
+										</td>
+										<td>
+											<input type="text" class="atb3"/>
+											<span style="display:none;" class="d3"></span>
+										</td>
+										<td>
+											<input type="text" class="atb4"/>
+											<span class="d4"></span>
+										</td>
+										<td>
+											<input type="text" class="atb5"/>
+											<span  class="d5"></span>
+										</td>
+										<td>
+											<input type="text" class="atb6"/>
+											<span  class="d6"></span>
+										</td>
+										<td>
+										    <a href="#" id="button1" class="view" onclick="popup('popUpDiv')"><img src="images/view.png" style="width:16px" alt="View"></a>
+											<a href="#" class="view" onclick="del(this);" ><img src="images/edit.png" style="width:16px" alt="View"></a>
+											<a href="#" class="remove" onclick="del(this);" ><img src="images/delete.png" style="width:16px" alt="Delete"></a>
+											
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							</div>
+							    <div id="blanket" style="display:none;"></div>
+								<div id="popUpDiv" style="display:none;">
+									<a href="#" onclick="popup('popUpDiv')" >x</a>
+									<table>
+										<caption>Fullname</caption>
+										<tr>
+											<td rowspan="6"><img src="images/admin.png" width="100px" height="100px" alt="View"></th>
+										</tr>
+										<tr>
+											<td>Email</td>
+										</tr>
+										<tr>
+											<td>Telephone</td>
+										</tr>
+										<tr>
+											<td>Gender</td>
+										</tr>
+										<tr>
+											<td>DOB</td>
+										</tr>
+										<tr>
+											<td>Address</td>
+										</tr>
+										<tr>
+											<td colspan="2"><span>Certificate:</span></td>
+										</tr>
+										<tr>
+											<td colspan="2"><span>Exp:</span></td>
+										</tr>
+										<tr>
+											<td colspan="2"><span>Project:</span></td>
+										</tr>
+									</table>
+								</div>	
+							<p style="font-size:20px"> Insert Employee</p><br/>
+							<form class="form-horizontal" name ="f">
+							  <div class="form-group">
+								<label for="inputEmail3" class="col-sm-2 control-label">ID</label>
+								<div class="col-sm-10">
+								  <input type="text" class="form-control" id="inputId" placeholder="ID" style="width:6%" onblur="checkError()">
+								  <span class="error" id="cid"></span>
+								</div>
+							  </div>						  
+							  <div class="form-group">
+								<label for="inputEmail3" class="col-sm-2 control-label">QualDate</label>
+								<div class="col-sm-10">
+								  <input type="date" class="form-control" id="inputQualDate" placeholder="QualDate" style="width:30%" onblur="checkError()"> <span class="error" id="cdb"></span>
+								</div>
+							  </div>
+							  <div class="form-group">
+								<label for="inputEmail3" class="col-sm-2 control-label">QualName</label>
+								<div class="col-sm-10">
+								  <input type="text" class="form-control" id="inputQualName" placeholder="QualName" style="width:30%" onblur="checkError()">
+								  <span class="error" id="cfn"></span>
+								</div>
+							  </div>
+							  <div class="form-group">
+								<label for="inputEmail3" class="col-sm-2 control-label">ORGName</label>
+								<div class="col-sm-10">
+								  <input type="text" class="form-control" id="inputORGName" placeholder="ORGName" style="width:30%;" onblur="checkError()"><span class="error" id="cad"></span>
+								</div>
+							  </div>
+							  <div class="form-group">
+								<label for="inputPassword3" class="col-sm-2 control-label">ORGAddress</label>
+								<div class="col-sm-10">
+								  <input type="text" class="form-control" id="inputORGAddress" placeholder="ORGAddress" style="width:30%" onblur="checkError()"><span class="error" id="cem"></span>
+								</div>
+							  </div>
+							  <div class="form-group">
+								<label for="inputEmail3" class="col-sm-2 control-label">IDPerson</label>
+								<div class="col-sm-10">
+								  <input type="text" class="form-control" id="inputIDPerson" placeholder="IDPerson" style="width:6%" onblur="checkError()">
+								  <span class="error" id="cid"></span>
+								</div>
+							  </div>
+							  <div class="form-group">
+								<div class="col-sm-offset-2 col-sm-10">
+								  <button type="submit" class="btn btn-default" id="insert" >Save</button>
+								</div>
+							  </div>
+							</form>
+					</div>
+					<div class="footer">
+						<strong>Copyright © 2015-2016 <a href="#">Phan Trung Kien</a>.</strong>  All rights reserved.
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

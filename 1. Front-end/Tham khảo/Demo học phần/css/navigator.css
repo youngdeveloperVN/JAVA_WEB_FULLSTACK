@@ -1,0 +1,84 @@
+/*NAVIGATOR COMMON START*/
+#navigator {
+	background-color: #333;
+	padding-left: 15px;
+	padding-right: 15px;
+	z-index: 1;  /*Hiển thị mặt trước nếu bị che khuất*/
+}
+
+.icon{
+    display: none !important;
+}
+
+#navigator a {
+	color: white;
+	padding: 18px 24px;
+	display: block;
+}
+
+#navigator a:hover, #navigator a.active {
+	background-color: #ddd;
+	color: #333;
+}
+
+.logo-home {
+	float: left;
+}
+
+#navigator>ul>li {
+	display: inline-block;
+	margin-left: -5px;
+}
+
+li.dropdown {
+	position: relative;
+}
+
+ul.child {
+	display: none;
+	background-color: #333;
+	position: absolute;
+}
+
+li.dropdown:hover ul.child {
+	display: block;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+/*NAVIGATOR COMMON END*/
+
+
+/*MOBILE AND TABLET START*/
+@media screen and (max-width: 768px) {
+	/*FOR ul child*/
+	ul.child {
+		padding-left: 20px;
+		background-color: #333;
+		position: absolute;
+	}
+
+	/*NAVIGATOR MOBILE START*/
+	.icon {
+		display: block !important;
+		position: absolute;
+		right: 0px;
+	}
+	#navigator ul {
+		display: none;
+	}
+	div.nav-logo {
+		position: relative;
+	}
+	#navigator>ul>li {
+		display: block;
+	}
+	ul.child {
+		display: none;
+		position: relative;
+	}
+	/*NAVIGATOR MOBILE END*/
+}
+/*MOBILE AND TABLET END*/

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+	xmlns:beans="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+	http://www.springframework.org/schema/security
+	http://www.springframework.org/schema/security/spring-security-3.1.xsd">
+	
+	<!-- Enable the method security to use the 
+	     @PreAuthorize, @PreFilter, @PostAuthorize and @PostFilter annotations
+	     in methods and secure it.
+	-->
+	<global-method-security pre-post-annotations="enabled" />
+	
+	<!-- secure the application´s urls with the specific Role --> 
+	<http auto-config="false"  use-expressions="true" access-denied-page="/accessdenied">
+		<intercept-url pattern="/login" access="permitAll" />
+		<intercept-url pattern="/logout" access="permitAll" />
+		<intercept-url pattern="/accessdenied" access="permitAll" />
+		<intercept-url pattern="/campaigns" access="hasAnyRole('ROLE_ADMIN','ROLE_CAMPAIGN')" />
+		<intercept-url pattern="/listUsers" access="hasRole('ROLE_ADMIN')" />
+		<intercept-url pattern="/menu" access="hasAnyRole('ROLE_ADMIN','ROLE_CAMPAIGN')" />
+		
+        <form-login login-page="/login" default-target-url="/menu" authentication-failure-url="/accessdenied"  />
+		<logout logout-success-url="/logout" />
+	</http>
+
+	<!-- Define the application authentication manager to use a custom Class (mongoUserDetailsService)
+	     to validate the user access, and the password enconding -->
+    <authentication-manager alias="authenticationManager">
+		<authentication-provider user-service-ref="mongoUserDetailsService">
+			<password-encoder hash="plaintext" />
+		</authentication-provider>
+	</authentication-manager>
+         
+
+</beans:beans>

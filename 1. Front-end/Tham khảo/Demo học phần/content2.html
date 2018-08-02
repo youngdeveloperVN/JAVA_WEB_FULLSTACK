@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+.sidebar {
+	width: 30%;
+	float: left;
+	background-color: #333;
+}
+
+.right{
+	float: right;
+}
+
+.left{
+	float: left;
+}
+
+.content {
+	width: 70%;
+	float: right;
+	padding: 0 15px;
+	
+}
+
+.clear {
+	clear: both;
+}
+
+/*PRODUCT CONTENT START*/
+.product {
+	padding: 20px;
+	width: 25%;
+	float: left;
+	text-align: center;
+}
+
+.product:hover {
+	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+	box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+}
+
+.product>a {
+	display: block;
+}
+
+.product img {
+	width: auto;
+	max-width: 200px;
+}
+/*PRODUCT CONTENT END*/
+@media screen and (max-width: 768px) {
+	.product {
+		width: 50%;
+	}
+	.sidebar {
+		width: 100%;
+	}
+	.content {
+		width: 100%;
+	}
+}
+</style>
+</head>
+<body>
+	<div class="main-content">
+		<div class="sidebar left">SIDE-BAR</div>
+		<div class="content right">
+
+			<div class="product">
+				<a> <span class="image"><img
+						class="product-image img-responsive"
+						src="https://vcdn.tikicdn.com/cache/200x200/media/catalog/product/i/m/img541.u2377.d20170325.t084326.911932.jpg" />
+				</span> <span class="title">Ngày xưa có một chuyện tình</span>
+					<p class="author">Nguyễn Nhật Ánh</p>
+					<p class="price-sale">
+						<span class="final-price">57.399&nbsp;₫</span> <span
+							class="price-regular">82.000&nbsp;₫</span> <span
+							class="sale-tag sale-tag-square">-30%</span>
+					</p>
+
+				</a>
+			</div>
+
+			<div class="product">
+				<a> <img class="product-image img-responsive"
+					src="https://vcdn.tikicdn.com/cache/200x200/media/catalog/product/i/m/img371.u2469.d20161031.t144703.806863.jpg" />
+					<span class="title">All In Love - Ngập Tràn Yêu Thương</span>
+					<p class="author">Cố Tây Tước</p>
+					<p class="price-sale">
+						<span class="final-price">93.400&nbsp;₫</span> <span
+							class="price-regular">118.000&nbsp;₫</span> <span
+							class="sale-tag sale-tag-square">-21%</span>
+					</p>
+
+				</a>
+			</div>
+
+			<div class="product">
+				<a> <img class="product-image img-responsive"
+					src="https://vcdn.tikicdn.com/cache/200x200/media/catalog/product/n/e/neu-gap-nguoi-ngay-cho-toi-gui-loi-chao.jpg" />
+					<span class="title">Nếu Gặp Người Ấy Cho Tôi Gửi Lời Chào</span>
+					<p class="author">Ichikawa Takuji</p>
+					<p class="price-sale">
+						<span class="final-price">64.500&nbsp;₫</span> <span
+							class="price-regular">82.000&nbsp;₫</span> <span
+							class="sale-tag sale-tag-square">-30%</span>
+					</p>
+
+				</a>
+			</div>
+
+			<div class="product">
+				<a> <img class="product-image img-responsive"
+					src="https://vcdn.tikicdn.com/cache/200x200/media/catalog/product/t/o/toi_thay_hoa_vang.jpg" />
+					<span class="title">Tôi thấy hoa vàng trên cỏ xanh</span>
+					<p class="author">Nguyễn Nhật Ánh</p>
+					<p class="price-sale">
+						<span class="final-price">57.399&nbsp;₫</span> <span
+							class="price-regular">82.000&nbsp;₫</span> <span
+							class="sale-tag sale-tag-square">-30%</span>
+					</p>
+
+				</a>
+			</div>
+
+			<div class="product">
+				<a> <img class="product-image img-responsive"
+					src="https://vcdn.tikicdn.com/cache/200x200/media/catalog/product/t/h/thiensonmotuyet-a_1.jpg" />
+					<span class="title">Thiên Sơn Mộ Tuyết</span>
+					<p class="author">Phỉ Ngã Tư Tồn</p>
+					<p class="price-sale">
+						<span class="final-price">76.000&nbsp;₫</span> <span
+							class="price-regular">82.000&nbsp;₫</span> <span
+							class="sale-tag sale-tag-square">-30%</span>
+					</p>
+
+				</a>
+			</div>
+			
+
+		</div>
+		<div class="clear"></div>
+	</div>
+
+</body>
+</html>

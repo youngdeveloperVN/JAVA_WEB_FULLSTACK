@@ -1,0 +1,11 @@
+#side_bar{
+	
+	float: left;
+	width: 20%;
+}
+
+#content{
+	float : right;
+	width: 79%;
+	
+}

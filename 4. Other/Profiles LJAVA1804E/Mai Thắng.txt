@@ -1,0 +1,22 @@
+Tên: Mai Văn Thắng
+	- Trường: Đại học Bách Khoa Hà Nội
+	- Chuyên ngành ở trường: Hệ thống thông tin và truyền thông
+	- Năm thứ: năm cuối
+	- Các ngôn ngữ đã học ở trường:
+		+ Năm 3: => kì 1: kỹ thuật lập trình( ngôn ngữ java) nhưng đã quên hết 
+	- HTML, CSS, JavaScript (JS). Em đã biết và học cái nào, học ở trường ra sao?
+		+ HTML: đang học trên web www.3school.com
+		+ CSS: chưa học
+		+ JS: chưa học
+	- Java, Spring MVC, Hibernate. Em đã biết và học cái nào, học ở trường ra sao?
+		+ Java: học nhưng đã quên hết.
+		+ Spring MVC: em nghe nói cũng chưa biết là gì
+		+ Hibernate: chưa biết
+	- Ngày em dành mấy tiếng tự học lập trình?
+		+ dự định sẽ là tự học lập trình 2 tiếng ở nhà
+		
+	- Nếu tự học, em đang học gì?
+		+ Đang học toeic
+		+ Học HTML. Ngày 10p.( mới thực hiện đc 1 ngày )
+FaceBook
+https://www.facebook.com/thang.maivan.14?fref=pb&hc_location=profile_browser

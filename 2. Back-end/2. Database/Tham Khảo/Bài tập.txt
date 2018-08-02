@@ -1,0 +1,42 @@
+1. Tạo bảng trong Book management system.xlsx
+	+ tạo bảng cột
+	+ tạo khoa chính
+	+ móc nối khóa chính với khóa phụ với bảng khác
+	
+2.	Tạo dữ liệu cho mỗi bảng
+
+	Insert dữ liệu cho từng bảng
+	
+3.	Tìm dữ liệu theo từng yêu cầu sau:
+	
+	3.1 Tìm tổng số tiền của tất cả các hóa đơn với khách hàng có id = 5;
+	3.2 Tìm tổng số sách của tác giả tên Nguyễn Nhật ánh
+	3.3 Tìm tên các sách của tác giả Nguyễn Nhật ánh
+	3.4 Tìm tổng sách với chủ đề kinh dị
+	3.5 Tính tất cả số tiền của tất cả các hóa đơn trong ngày 13/6/2018
+	3.6 Tìm tổng số tiền các sách với chủ đề ngôn tình trong tháng 6/2018
+
+	Lời giải
+	3.1 SELECT SUM(`totalPrice`) FROM `order` WHERE `idCustomer` = 101;
+	3.2
+		Cach 1: Tìm id Nguyễn Nhật ánh => Count total Book với id
+			SELECT `idAuthor` FROM `author` WHERE `name` = 'Nguyen Nhat Anh'; >> 101
+			SELECT COUNT(*) FROM `book` WHERE `idAuthor` = 101
+		Cách 2: Select lồng nhau
+			SELECT COUNT(*) FROM `book` WHERE `idAuthor` = (SELECT `idAuthor` FROM `author` WHERE `name` = 'Nguyen Nhat Anh')
+		Cách 3:
+			SELECT COUNT(*) FROM `book` b INNER JOIN `author` a ON b.`idAuthor` = a.`idAuthor` WHERE  a.`name` = 'Nguyen Nhat Anh'
+	3.3 Lời giải tương ứng cách 3 ở bước trên
+		SELECT b.`name` FROM `book` b INNER JOIN `author` a ON b.`idAuthor` = a.`idAuthor` WHERE  a.`name` = 'Nguyen Nhat Anh'
+	3.4
+		Cách 1:
+		SELECT COUNT(*) as `Tổng số sách kinh dị` FROM `bookcategory` WHERE `idCategory` = (SELECT `idCategory` FROM `categories` WHERE `name` = 'kinh di')
+		
+		Cách 2:
+		SELECT COUNT(*) as `Tổng số sách kinh dị` FROM `bookcategory` b INNER JOIN `categories` c ON b.`idCategory` = c.`idCategory` WHERE c.`name` = 'kinh di'
+	3.5
+		SELECT SUM(`totalPrice`) FROM `order` WHERE `date` = '2016-06-29';
+	3.6
+		SELECT SUM(`totalPrice`) FROM `order` WHERE `date` = '2016-06-29';
+
+

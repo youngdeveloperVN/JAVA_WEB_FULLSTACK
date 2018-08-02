@@ -1,0 +1,28 @@
+Implementation of spring-security using Spring Data-MongoDB.
+
+See http://static.springsource.org/spring-data/data-mongodb/docs/current/reference/html
+
+Requires an instance of mongodb listening on port 27017 (default). See http://www.mongodb.org/display/DOCS/Quickstart
+for installation instructions.
+
+-Test layer:
+Run: mvn clean test
+
+-Added web layer using Thymeleaf template engine, see http://www.thymeleaf.org/documentation.html
+Run: mvn clean jetty:run
+visit localhost:8080/spring-security-mongodb
+
+-Added standalone jetty war maven profile 
+mvn -Pstandalone-jetty -DskipTests=true clean package
+java -jar target/spring-security-mongodb-1.0.0-BUILD-SNAPSHOT.war
+visit localhost:8080
+
+-Added thymeleaf-extras-springsecurity3: https://github.com/thymeleaf/thymeleaf-extras-springsecurity3
+Updated context, html, and controller, in line with http://www.thymeleaf.org/springsecurity.html
+
+-Added standalone tomcat jar maven profile
+(Thanks to Tomasz Nurkiewicz: http://nurkiewicz.blogspot.com/2012/11/standalone-web-application-with.html)
+
+mvn -Pstandalone-tomcat7 -DskipTests=true clean package
+java -jar target/spring-security-mongodb.jar
+visit localhost:8080

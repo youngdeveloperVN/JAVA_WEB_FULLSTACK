@@ -1,0 +1,27 @@
+- Tên: Phạm Ngọc Huy
+	- Trường: Đại học Bôn Ba
+	- Chuyên ngành ở trường: Chém gió, Mạng máy tính,...
+	- Năm thứ: 2
+	- Các ngôn ngữ đã học ở trường:
+		+ Năm 1: => kì 1: C trà chanh. => kì 2: C++ trà đá
+		+ Năm 2: => kì 1: Java nhân trần. => kì 2: C++ trà đá
+		hoặc
+		+ Em mới nhập trường chưa học gì hết.
+	- HTML, CSS, JavaScript (JS). Em đã biết và học cái nào, học ở trường ra sao?
+		+ HTML: đang học ở trường.
+		+ CSS: chưa học ở trường. Đang tìm hiểu trên mạng
+		+ JS: chưa học
+	- Java, Spring MVC, Hibernate. Em đã biết và học cái nào, học ở trường ra sao?
+		+ Java: chưa học.
+		+ Spring MVC: em nghe nói cũng chưa biết là gì
+		+ Hibernate: tự học, trường  chưa dạy
+	- Ngày em dành mấy tiếng tự học lập trình?
+		+ Ngày em chỉ chơi Liên Minh Huyền Thoại. không có thời gian học.
+		hoặc
+		+ Em dành 30p để học.
+	- Nếu tự học, em đang học gì?
+		+ Đang học tiếng Anh. Ngày 30p
+		+ Đang học PHP. ngày 20p
+		+ Học HTML. Ngày 10p.
+		hoặc
+		+ Em chả có thời gian chơi Game. Lấy đâu ra mà tự học,....

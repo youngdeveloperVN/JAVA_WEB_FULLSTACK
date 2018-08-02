@@ -1,0 +1,3 @@
+﻿Cài đặt xampp
+Sử dụng mysql
+Và kiểm tra xampp có chạy không

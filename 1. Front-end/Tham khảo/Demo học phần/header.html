@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+
+<style>
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+/*HEADER PC START*/
+#header {
+	background-color: #333;
+	padding: 15px 15px;
+	font-family: Arial;
+	color: #ddd;
+}
+
+.logo-header {
+	font-size: 37px;
+}
+
+.description-header {
+	position: relative;
+	font-size: 25px;
+	top: 10px;
+}
+/*HEADER PC END*/
+@media screen and (max-width: 768px) {
+	.left {
+		width: 100%;
+	}
+	.right {
+		width: 100%;
+	}
+	/*HEADER MOBILE TABLET START*/
+	#header {
+		text-align: center;
+	} /*HEADER MOBILE TABLET END*/
+}
+</style>
+</head>
+<body>
+
+	<div id="header">
+		<h1 class="logo-header left">WEBSITE NAME</h1>
+		<p class="description-header right">This is a paragraph.</p>
+		<div class="clear"></div>
+	</div>
+
+
+</body>
+</html>

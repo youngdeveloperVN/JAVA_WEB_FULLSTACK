@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Font Awesome Icon Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+.main-content {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.sidebar {
+	width: 30%;
+	background-color: #ddd;
+}
+
+.content {
+	width: 70%;
+	font-size: 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+body{
+	min-height: 100%;
+    line-height: normal;
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+}
+
+/*PRODUCT CONTENT START*/
+.content>.product-item {
+    width: 25%;
+}
+
+.product-item {
+    display: block;
+    padding: 0 0 25px;
+    border: 1px solid transparent;
+    position: relative;
+    width: 248px;
+    max-width: 100%;
+}
+
+.product-item:hover {
+	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+	box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+}
+
+.product-item>a {
+    display: block;
+    width: 200px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-item .image {
+    overflow: hidden;
+    display: block;
+    position: relative;
+    margin: 25px auto 0;
+    text-align: center;
+    background: #fff;
+    height: 200px;
+    white-space: nowrap;
+}
+
+.product-item .title {
+    text-overflow: ellipsis;
+    position: relative;
+    text-align: left;
+    margin: 15px auto 0;
+    letter-spacing: .1px;
+    width: 100%;
+    font-size: 13px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.38;
+    color: #242424;
+    max-height: 40px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.product-item .author {
+    padding: 5px 0 0;
+    color: #777;
+    font-size: 11px;
+    text-align: left;
+}
+
+.product-item p {
+    padding: 5px 0 0;
+    color: #777;
+    font-size: 13px;
+    text-align: left;
+    margin: 0;
+}
+
+.product-item .rating {
+    padding: 11px 0 0;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.product-item .review {
+    padding-top: 8px;
+    font-size: 12px;
+    color: #787878;
+    display: inline-block;
+}
+
+.product-item .rating .rating-content {
+    font-size: 0;
+    line-height: 1;
+    position: relative;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.product-item .rating .rating-content .fa fa-star checked {
+    font-family: icomoon;
+    font-weight: 400;
+    font-style: normal;
+    display: inline-block;
+    margin: .1rem;
+    color: #b8b8b8;
+    font-size: 13px;
+    text-rendering: auto;
+}
+
+.product-item .price-sale {
+    font-size: 13px;
+    color: #242424;
+    font-weight: 500;
+    padding: 10px 0 0;
+    text-align: left;
+}
+
+.product-item .price-sale .price-regular {
+    font-size: 11px;
+    color: #a2a2a2;
+    text-decoration: line-through;
+    text-align: left;
+    font-weight: 300;
+}
+
+.product-item .sale-tag-square {
+    color: #FF3B26;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 2px;
+}
+
+.product-item .rating .rating-content .fa fa-star checked {
+    font-family: icomoon;
+    font-weight: 400;
+    font-style: normal;
+    display: inline-block;
+    margin: .1rem;
+    color: #b8b8b8;
+    font-size: 13px;
+    text-rendering: auto;
+}
+
+/*ratting*/
+.checked {
+    color: orange;
+}
+
+/*PRODUCT CONTENT END*/
+
+@media screen and (max-width: 768px) {
+	.product {
+		width: 50%;
+	}
+	.sidebar {
+		width: 100%;
+	}
+	.content {
+		width: 100%;
+	}
+	
+	
+	.content>.product-item {
+	    width: 50%;
+	    display: inline-block;
+	    vertical-align: top;
+	    margin: 0;
+	}
+
+}
+</style>
+</head>
+
+<body>
+	<div class="main-content">
+		<div class="sidebar">dss</div>
+		<div class="content">
+
+			<!-- --fa fa-star checkedt -->
+			<div class="product-item    ">
+				<a class=""> 
+					<span class="image"> <img
+							class="product-image img-responsive"
+							src="https://vcdn.tikicdn.com/cache/200x200/media/catalog/product/t/o/toi_thay_hoa_vang.jpg"
+							alt=""> <span class="product-right-icon"> <i
+								class="tikicon icon-2h"></i>
+						</span>
+					</span> 
+					<span class="title"> Tôi Thấy Hoa Vàng Trên Cỏ Xanh (Nguyễn
+						Nhật... </span>
+					<p class="author">Nguyễn Nhật Ánh</p>
+					<p class="price-sale">
+						<span class="final-price">57.399&nbsp;₫</span> <span
+							class="price-regular">82.000&nbsp;₫</span> <span
+							class="sale-tag sale-tag-square">-30%</span>
+					</p>
+					<div class="review-wrap">
+						<p class="rating">
+							  <span class="fa fa-star checked"></span>
+							  <span class="fa fa-star checked"></span>
+							  <span class="fa fa-star checked"></span>
+							  <span class="fa fa-star"></span>
+							  <span class="fa fa-star"></span>
+						</p>
+						<p class="review">(1265 nhận xét)</p>
+					</div>
+
+				</a>
+			</div>
+			<!-- --end -->
+			
+			<!-- --fa fa-star checkedt -->
+			<div class="product-item    ">
+				<a class=""> 
+					<span class="image"> <img
+							class="product-image img-responsive"
+							src="https://vcdn.tikicdn.com/cache/200x200/media/catalog/product/i/m/img211.u547.d20161114.t155459.298855.gif"
+							alt=""> <span class="product-right-icon"> <i
+								class="tikicon icon-2h"></i>
+						</span>
+					</span> 
+					<span class="title">Mùi Hương (Tái Bản)</span>
+					<p class="author">Patrick Suskind</p>
+					<p class="price-sale">
+						<span class="final-price">57.399&nbsp;₫</span> <span
+							class="price-regular">82.000&nbsp;₫</span> <span
+							class="sale-tag sale-tag-square">-30%</span>
+					</p>
+					<div class="review-wrap">
+						<p class="rating">
+							<span class="rating-content"> <i class="fa fa-star checked"></i> <i
+								class="fa fa-star checked"></i> <i class="fa fa-star checked"></i> <i class="fa fa-star checked"></i> <i
+								class="fa fa-star checked"></i> <span style="width: 93%"> <i
+									class="fa fa-star checked"></i> <i class="fa fa-star checked"></i> <i class="fa fa-star checked"></i> <i
+									class="fa fa-star checked"></i> <i class="fa fa-star checked"></i>
+							</span>
+							</span>
+						</p>
+						<p class="review">(1265 nhận xét)</p>
+					</div>
+
+				</a>
+			</div>
+			<!-- --end -->
+			
+			<!-- --fa fa-star checkedt -->
+			<div class="product-item">
+				<a class=""> 
+					<span class="image"> <img
+							class="product-image img-responsive"
+							src="https://vcdn.tikicdn.com/cache/200x200/media/catalog/product/i/m/img448.u3059.d20170616.t101858.371205.jpg"
+							alt=""> <span class="product-right-icon"> <i
+								class="tikicon icon-2h"></i>
+						</span>
+					</span> 
+					<span class="title"> Ông Trăm Tuổi Trèo Qua Cửa Sổ Và Biến Mất </span>
+					<p class="author">Jonas Jonasson</p>
+					<p class="price-sale">
+						<span class="final-price">111.750&nbsp;₫</span> <span
+							class="price-regular">82.000&nbsp;₫</span> <span
+							class="sale-tag sale-tag-square">-30%</span>
+					</p>
+					<div class="review-wrap">
+						<p class="rating">
+							<span class="rating-content"> <i class="fa fa-star checked"></i> <i
+								class="fa fa-star checked"></i> <i class="fa fa-star checked"></i> <i class="fa fa-star checked"></i> <i
+								class="fa fa-star checked"></i> <span style="width: 93%"> <i
+									class="fa fa-star checked"></i> <i class="fa fa-star checked"></i> <i class="fa fa-star checked"></i> <i
+									class="fa fa-star checked"></i> <i class="fa fa-star checked"></i>
+							</span>
+							</span>
+						</p>
+						<p class="review">(1265 nhận xét)</p>
+					</div>
+
+				</a>
+			</div>
+			<!-- --end -->
+			
+			<!-- --fa fa-star checkedt -->
+			<div class="product-item">
+				<a class=""> 
+					<span class="image"> <img
+							class="product-image img-responsive"
+							src="https://vcdn.tikicdn.com/cache/200x200/media/catalog/product/i/m/img371.u2469.d20161031.t144703.806863.jpg"
+							alt=""> <span class="product-right-icon"> <i
+								class="tikicon icon-2h"></i>
+						</span>
+					</span> 
+					<span class="title"> Tôi Thấy Hoa Vàng Trên Cỏ Xanh (Nguyễn
+						Nhật... </span>
+					<p class="author">Nguyễn Nhật Ánh</p>
+					<p class="price-sale">
+						<span class="final-price">57.399&nbsp;₫</span> <span
+							class="price-regular">82.000&nbsp;₫</span> <span
+							class="sale-tag sale-tag-square">-30%</span>
+					</p>
+					<div class="review-wrap">
+						<p class="rating">
+							<span class="rating-content"> <i class="fa fa-star checked"></i> <i
+								class="fa fa-star checked"></i> <i class="fa fa-star checked"></i> <i class="fa fa-star checked"></i> <i
+								class="fa fa-star checked"></i> <span style="width: 93%"> <i
+									class="fa fa-star checked"></i> <i class="fa fa-star checked"></i> <i class="fa fa-star checked"></i> <i
+									class="fa fa-star checked"></i> <i class="fa fa-star checked"></i>
+							</span>
+							</span>
+						</p>
+						<p class="review">(1265 nhận xét)</p>
+					</div>
+
+				</a>
+			</div>
+			<!-- --end -->
+			
+			<!-- --fa fa-star checkedt -->
+			<div class="product-item    ">
+				<a class=""> 
+					<span class="image"> <img
+							class="product-image img-responsive"
+							src="https://vcdn.tikicdn.com/cache/200x200/media/catalog/product/b/o/bo-gia_1.jpg"
+							alt=""> <span class="product-right-icon"> <i
+								class="tikicon icon-2h"></i>
+						</span>
+					</span> 
+					<span class="title"> Tôi Thấy Hoa Vàng Trên Cỏ Xanh (Nguyễn
+						Nhật... </span>
+					<p class="author">Nguyễn Nhật Ánh</p>
+					<p class="price-sale">
+						<span class="final-price">57.399&nbsp;₫</span> <span
+							class="price-regular">82.000&nbsp;₫</span> <span
+							class="sale-tag sale-tag-square">-30%</span>
+					</p>
+					<div class="review-wrap">
+						<p class="rating">
+							<span class="rating-content"> <i class="fa fa-star checked"></i> <i
+								class="fa fa-star checked"></i> <i class="fa fa-star checked"></i> <i class="fa fa-star checked"></i> <i
+								class="fa fa-star checked"></i> <span style="width: 93%"> <i
+									class="fa fa-star checked"></i> <i class="fa fa-star checked"></i> <i class="fa fa-star checked"></i> <i
+									class="fa fa-star checked"></i> <i class="fa fa-star checked"></i>
+							</span>
+							</span>
+						</p>
+						<p class="review">(1265 nhận xét)</p>
+					</div>
+
+				</a>
+			</div>
+			<!-- --end -->
+			
+			<!-- --fa fa-star checkedt -->
+			<div class="product-item    ">
+				<a class=""> 
+					<span class="image"> <img
+							class="product-image img-responsive"
+							src="https://vcdn.tikicdn.com/cache/200x200/media/catalog/product/n/g/nguoiduadieu.u4939.d20170925.t155458.54941.jpg"
+							alt=""> <span class="product-right-icon"> <i
+								class="tikicon icon-2h"></i>
+						</span>
+					</span> 
+					<span class="title"> Tôi Thấy Hoa Vàng Trên Cỏ Xanh (Nguyễn
+						Nhật... </span>
+					<p class="author">Nguyễn Nhật Ánh</p>
+					<p class="price-sale">
+						<span class="final-price">57.399&nbsp;₫</span> <span
+							class="price-regular">82.000&nbsp;₫</span> <span
+							class="sale-tag sale-tag-square">-30%</span>
+					</p>
+					<div class="review-wrap">
+						<p class="rating">
+							<span class="rating-content"> <i class="fa fa-star checked"></i> <i
+								class="fa fa-star checked"></i> <i class="fa fa-star checked"></i> <i class="fa fa-star checked"></i> <i
+								class="fa fa-star checked"></i> <span style="width: 93%"> <i
+									class="fa fa-star checked"></i> <i class="fa fa-star checked"></i> <i class="fa fa-star checked"></i> <i
+									class="fa fa-star checked"></i> <i class="fa fa-star checked"></i>
+							</span>
+							</span>
+						</p>
+						<p class="review">(1265 nhận xét)</p>
+					</div>
+
+				</a>
+			</div>
+			<!-- --end -->
+			
+			<!-- --fa fa-star checkedt -->
+			<div class="product-item    ">
+				<a class=""> 
+					<span class="image"> <img
+							class="product-image img-responsive"
+							src="https://vcdn.tikicdn.com/cache/200x200/media/catalog/product/i/m/img541.u2377.d20170325.t084326.911932.jpg"
+							alt=""> <span class="product-right-icon"> <i
+								class="tikicon icon-2h"></i>
+						</span>
+					</span> 
+					<span class="title"> Tôi Thấy Hoa Vàng Trên Cỏ Xanh (Nguyễn
+						Nhật... </span>
+					<p class="author">Nguyễn Nhật Ánh</p>
+					<p class="price-sale">
+						<span class="final-price">57.399&nbsp;₫</span> <span
+							class="price-regular">82.000&nbsp;₫</span> <span
+							class="sale-tag sale-tag-square">-30%</span>
+					</p>
+					<div class="review-wrap">
+						<p class="rating">
+							<span class="rating-content"> <i class="fa fa-star checked"></i> <i
+								class="fa fa-star checked"></i> <i class="fa fa-star checked"></i> <i class="fa fa-star checked"></i> <i
+								class="fa fa-star checked"></i> <span style="width: 93%"> <i
+									class="fa fa-star checked"></i> <i class="fa fa-star checked"></i> <i class="fa fa-star checked"></i> <i
+									class="fa fa-star checked"></i> <i class="fa fa-star checked"></i>
+							</span>
+							</span>
+						</p>
+						<p class="review">(1265 nhận xét)</p>
+					</div>
+
+				</a>
+			</div>
+			<!-- --end -->
+			
+			<!-- --fa fa-star checkedt -->
+			<div class="product-item    ">
+				<a class=""> 
+					<span class="image"> <img
+							class="product-image img-responsive"
+							src="https://vcdn.tikicdn.com/cache/200x200/media/catalog/product/c/o/combo_17.jpg"
+							alt=""> <span class="product-right-icon"> <i
+								class="tikicon icon-2h"></i>
+						</span>
+					</span> 
+					<span class="title"> Đối Thoại Với Thượng Đế (Tái Bản 2014)</span>
+					<p class="author">Neale Donald Walsch</p>
+					<p class="price-sale">
+						<span class="final-price">57.399&nbsp;₫</span> <span
+							class="price-regular">82.000&nbsp;₫</span> <span
+							class="sale-tag sale-tag-square">-30%</span>
+					</p>
+					<div class="review-wrap">
+						<p class="rating">
+							<span class="rating-content"> <i class="fa fa-star checked"></i> <i
+								class="fa fa-star checked"></i> <i class="fa fa-star checked"></i> <i class="fa fa-star checked"></i> <i
+								class="fa fa-star checked"></i> <span style="width: 93%"> <i
+									class="fa fa-star checked"></i> <i class="fa fa-star checked"></i> <i class="fa fa-star checked"></i> <i
+									class="fa fa-star checked"></i> <i class="fa fa-star checked"></i>
+							</span>
+							</span>
+						</p>
+						<p class="review">(1265 nhận xét)</p>
+					</div>
+
+				</a>
+			</div>
+			<!-- --end -->
+			
+			
+		</div>
+	</div>
+
+</body>
+</html>

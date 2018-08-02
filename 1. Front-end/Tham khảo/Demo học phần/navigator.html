@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <head>
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <title>Menu dọc responsive</title>
+    </head>
+    <style>
+      /*RESET CSS START*/
+      *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+      a{
+        text-decoration: none;
+      }
+      ul{
+        list-style-type: none;
+      }
+      /*RESET CSS END*/
+
+      /*CUSTOM CLASS START*/
+      .clear{
+        clear: both;
+      }
+
+      .icon{
+        display: none !important;
+      }
+      .left{
+        float: left;
+      }
+      .right{
+        float: right;
+      }
+      /*CUSTOM CLASS END*/
+
+
+      /*NAVIGATOR COMMON START*/
+      #navigator{
+        background-color: #333;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      #navigator a{
+        color: white;
+
+        padding: 12px 24px;
+        display: block;
+      }
+
+      #navigator a:hover, #navigator a.active{
+        background-color: #ddd;
+        color: #333;
+      }
+      .logo-home{
+        float: left;
+      }
+
+      #navigator > ul > li{
+        display: inline-block;
+        margin-left : -5px;
+
+      }
+      li.dropdown{
+        position: relative;
+      }
+
+      ul.child{
+        display: none;
+        background-color: #333;
+        position: absolute;
+      }
+
+      li.dropdown:hover ul.child {
+        display: block;
+      }
+      /*NAVIGATOR COMMON END*/
+
+      /*MOBILE AND TABLET START*/
+      @media screen and (max-width: 768px) {
+
+        /*FOR ul child*/
+        ul.child{
+          padding-left: 20px;
+          background-color: #333;
+          position: absolute;
+        }
+
+        /*CUSTOM CLASS MOBILE START*/
+        .left, .right{
+          float: none;
+          width: 100%;
+        }
+        /*CUSTOM CLASS MOBILE END*/
+
+        /*NAVIGATOR MOBILE START*/
+        .icon{
+          display: block !important;
+          position: absolute;
+          right: 0px;
+        }
+        #navigator ul{
+          display: none;
+        }
+        div.nav-logo{
+          position: relative;
+        }
+
+        #navigator > ul > li{
+          display: block;
+        }
+        ul.child{
+          display: none;
+          position: relative;
+        }
+        /*NAVIGATOR MOBILE END*/
+
+        /*OTHER START*/
+        /*OTHER END*/
+      }
+      /*MOBILE AND TABLET END*/
+
+    </style>
+
+<!-- 	NAVIGATOR START -->
+    <div id="navigator">
+
+      <div class="nav-logo left">
+        <a href="#" class="logo-home">WebsiteName</a>
+        <a href="javascript:void(0);" class="icon">
+          <i class="fa fa-bars"></i>
+        </a>
+        <div class="clear"></div>
+      </div>
+
+      <ul class="left">
+        <li><a href="#">Trang chủ</a></li>
+        <li class="dropdown"><a href="#">Tin tức <i class="fa fa-angle-down"></i>
+
+          </a>
+          <ul class="child">
+            <li><a href="#">Menu2</a></li>
+            <li><a href="#">Menu2</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Sản phẩm</a></li>
+        <li><a href="#">Liên hệ</a></li>
+      </ul>
+
+      <ul class= "right">
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Register</a></li>
+      </ul>
+      <div class="clear"></div>
+
+    </div>
+<!-- 	NAVIGATOR END -->
+
+<!-- 	CONTENT START -->
+	Content
+<!-- 	CONTENT START -->
+
+
+    <script>
+     // setup when loaded
+      window.onload = function(){
+        setMenuActiveEvent();
+        setupIconShowHideMenu();
+      }
+
+      /**For show menu on mobile mode*/
+      function setupIconShowHideMenu() {
+        var navigator  = document.getElementById("navigator");
+        var icon  = document.getElementsByClassName("icon")[0];
+        icon.onclick= function(){
+          var listUl  = document.getElementsByTagName("ul");
+          for (var i = 0; i < listUl.length; i++){
+            if(listUl[i].style.display == "block"){
+              listUl[i].style.display = "none";
+            } else {
+              listUl[i].style.display = "block";
+            }
+          }
+        }
+      }
+
+      /*For active click menu**/
+      function setMenuActiveEvent() {
+        //add active for home
+        document.getElementsByClassName("logo-home")[0].classList.add("active");
+        // listen click <a> in navigator
+        var navigator  = document.getElementById("navigator");
+
+        var listA = navigator.getElementsByTagName("a");
+        for (var i = 0; i < listA.length; i++){
+          listA[i].onclick  = function (){
+            //find and clear  all active class
+            var activeList = navigator.getElementsByClassName("active");
+            for (var j = 0; j < activeList.length;j ++){
+              activeList[j].classList.remove("active");
+            }
+            //add class to a active
+            this.classList.add("active");
+          }
+        }
+      }
+    </script>
+  </body>
+</html> 

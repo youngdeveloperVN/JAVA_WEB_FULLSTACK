@@ -1,0 +1,45 @@
+Thực hành:
+
+1. Tìm hiểu và sử dụng các tag HTML
+	- thẻ link a
+	- thẻ văn bản; p
+	- thẻ tiêu đề: h1, h2,...
+	- thẻ table, td, tr
+	- thẻ div
+	- thẻ list: ol <-> ul, li
+	- thẻ form
+2. Cách viết CSS
+	- theo id: #tenid {}
+	- theo class: .tenclass {}
+	- theo cú pháp A B
+	- 
+
+3. Các thuộc tính CSS
+	- background
+	- color
+	- width
+	- height
+	- position: relative, absolute
+4. Link demo
+	Link demo sẽ lưu trên tryit editor để có thể xem mọi lúc mọi nơi.
+	Các demo này  tự viết và sẽ
+	- Tạo menu
+		Các trang web luôn sử dụng menu.
+		+ tạo menu dọc:
+			https://www.w3schools.com/code/tryit.asp?filename=FR4RV9PBC7A5
+		+ tạo menu ngang
+		    https://www.w3schools.com/code/tryit.asp?filename=FR4RK6ZPYP07
+		+ tạo menu ngang 2 cấp
+			
+
+	- Tạo buttton
+		+ Button có hiệu ứng hover
+			https://www.w3schools.com/code/tryit.asp?filename=FR4S5XLFU08E
+		+ Button bo tròn
+			https://www.w3schools.com/code/tryit.asp?filename=FR4S9VGY6Z2I
+		+ Kết hợp bo tròn và hiệu ứng
+			https://www.w3schools.com/code/tryit.asp?filename=FR4T28PXKLIO
+	- 
+	
+			
+	
