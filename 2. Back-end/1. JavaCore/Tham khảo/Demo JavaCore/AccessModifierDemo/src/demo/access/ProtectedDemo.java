@@ -7,9 +7,13 @@ public class ProtectedDemo {
 		ProtectedSuperClass superClass = new ProtectedSuperClass();
 		superClass.getName(); // Cause: protected int getName()
 		superClass.setName("A"); // Cause: protected void setName(int name) 
+		int idSuper = superClass.id //Error
 		
 		ProtectedSubClass subClass = new ProtectedSubClass();
-		subClass.getName();  // Not Ok because getName() not override
-		subClass.getId();  // is Ok because getId() not override
+		subClass.getName();  // getName() not override in subClass
+		subClass.getId();  // getId() override in subClass
+		int id = subClass.id; // id override in subClass
+		int id = subClass.name;  // not override in subClass
+		
 	}
 }

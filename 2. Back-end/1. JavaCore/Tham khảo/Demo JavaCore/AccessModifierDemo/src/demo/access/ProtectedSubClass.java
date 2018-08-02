@@ -4,8 +4,8 @@ import demo.access.protecteds.ProtectedSuperClass;
 
 public class ProtectedSubClass extends ProtectedSuperClass {
 	
-	protected int id2;
-	
+	protected int id;
+
 	@Override
 	protected int getId() {
 		// TODO Auto-generated method stub
