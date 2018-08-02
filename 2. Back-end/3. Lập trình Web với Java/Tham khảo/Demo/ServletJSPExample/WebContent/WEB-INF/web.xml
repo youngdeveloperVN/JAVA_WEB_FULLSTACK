@@ -10,7 +10,7 @@
 		<servlet-name>HelloServlet</servlet-name>
 		<servlet-class>com.servletjsp.controler.HelloServlet</servlet-class>
 	</servlet>
-	<!-- Ánh xạ HelloServlet với tên hello.do -->
+	
 	<servlet-mapping>
 		<servlet-name>HelloServlet</servlet-name>
 		<url-pattern>/hello</url-pattern>
