@@ -1,0 +1,68 @@
+1. Cách hoạt động gọi trang web của server
+	Server gọi cấu hình mặc định nếu không custom cấu hình
+	ví dụ link với xampp: http://localhost:90/website nó sẽ gọi tới máy tính cổng 90 và gọi tới thư mục website
+	và trỏ tới file: index.html là trang chủ
+	
+2. Cấu hình thư mục website
+	Ví dụ:
+		index.html
+		css
+			mystyle.css
+		js
+			myjs.css
+			jquery.min.js
+		images
+		audio
+3. Các thành phần trang web
+	- header
+	- navigator
+	- main-content
+		+ content
+		+ side-bar
+	- footer
+	Cách thành phần chính này : đặt width theo % để có thể có dãn và float để có thể responsive
+	
+4. Các bước tạo giao diện
+	3.1 Cấu hình thư mục website
+	3.2 Định hình cách thành phần của trang chủ
+	3.3 Tạo mã HTML
+	3.4 Tạo CSS cơ bản
+		+ reset CSS
+		+ tạo CSS cho các thành phần chính
+	3.4 Tạo HTML nội dung cho các thành phần nhỏ
+		Ví dụ: Header > Footer > Main Content
+	3.5 Tạo CSS cho các thành phần nhỏ. Lắp ghép chúng vào khung trang web ở bước 3.3
+	3.6 Tái cấu trúc CSS cho các class và lược bỏ những code thừa
+	3.7 Thêm hiệu ứng và gọi các thành phần nhỏ khác.
+		Ví dụ: click login gọi trang login
+5. Các khái niệm
+	Responsive: Một giao diện responsive là hiển thị phù hợp với mọi thiết bị
+	Layout Website là cấu hình giao diện cho người dùng, Layout tốt phải đạt được responsive
+6. Các thuộc tính CSS
+	box-sizing: content-box (mặc định)
+			: border-box (đặt theo này để hiển thị chuẩn xác về height và width)
+	float: left, right, both. => đọc ví dụ về menu ngang
+	giới thiệu cách phân chia % trong layout
+7. thực hành
+	Cách tạo button bằng thẻ a
+	Cách tạo menu ngang bằng float
+	Tạo layout website
+8. giới thiệu sơ lược bootstrap
+ 	+ giống và khác nhau giữa thư viện và framework
+ 		Link để hiểu rõ hơn: https://thangphampt.wordpress.com/2017/04/05/framework-va-library-khac-nhau-the-nao/
+ 		
+	+ Bootstrap là một framework của CSS. Hỗ trợ cài đặt giao diện nhanh
+		Bản chất của Bootstrap là phân chia % theo 12 cột. Mỗi cột có độ rộng là 100%/12. Mỗi cột này gọi là Grid
+		Khái niệm Grid có trong CSS chứ không phải của Bootstrap:
+			Link ví dụ: https://www.w3schools.com/css/css_grid.asp
+		Bootstrap sẽ đặt các class theo độ rộng:
+			class
+9. Các vấn đề chưa được nhắc tới
+	@import  >> import css đơn giản hơn
+	@media  >> để cho responsive
+10. Một số cách responsive trang web
+	+ sử dụng bootstrap (framework hỗ trợ sẵn responsive)
+	+ sử dụng float: left, right, clear: both và sử dụng độ rộng %
+	+ flexbox: Cách này khá mới gần đây. Nó có thể co dãn thành phần website theo chiều ngang dọc
+	
+	

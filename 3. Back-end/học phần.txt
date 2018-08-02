@@ -1,0 +1,26 @@
+MODULE 1: JAVA core
+MODULE 2: Cơ sở dữ liệu
+MODULE 3: LẬP TRÌNH WEB VỚI JAVA
+1. Hibernate - jdbc
+2. MVC với JSP - servlet cơ bản (kết hợp Hibernate)
+3. MVC với JSP - servlet nâng cao. (kết hợp Hibernate)
+	Ví dụ Login
+4. Hibernate Nâng cao
+	One to one
+	One to many
+	Many to Many
+5. WebService - SOAP/XML
+	Ví dụ service tính toán
+6. Webservice Rest Service
+	Ví dụ về upload file lên server
+MODULE 4: LẬP TRÌNH WEB VỚI JAVA SỬ DỤNG SPRING FRAMEWORK
+1. Spring MVC Framework
+2. Spring MVC & Hibernate
+3. Giới thiệu qua về Struts, JSF.
+4. Bảo mật website
+
+
+
+
+
+

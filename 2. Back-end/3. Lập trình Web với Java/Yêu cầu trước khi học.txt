@@ -1,3 +1,0 @@
-Ca`i da?t Apache Tomcat 8
-Ca`i da?t Apache Maven riêng vo´i Eclipse => nha`m gia?ng viên hô~ tro? tô´t nhâ´t trong qua´ tri`nh thu?c ha`nh
-Ca`i da?t Xampp o? ho?c thâ`n Co su? du~ liê?u

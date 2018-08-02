@@ -1,0 +1,9 @@
+1. HelloWorl đơn giản System.out
+2. Hello với Scanner
+
+3. Class, Interface, AbstrackClass
+3. Thao tác tạo class POJO
+4. Demo với Serialization
+	Link tham khảo: https://stackoverflow.com/questions/633402/what-is-serialization
+	
+	

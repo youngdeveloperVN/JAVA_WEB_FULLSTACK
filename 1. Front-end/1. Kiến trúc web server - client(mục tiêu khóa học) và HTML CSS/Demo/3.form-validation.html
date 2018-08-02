@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+</style>
+
+<script>
+	myFunction = function(){
+		var password = document.getElementsByName('password')[0].value;
+		var username = document.getElementsByName('username')[0].value;
+		
+		if(password == '' && username == '') 
+		alert("Vui lòng điền đầy đủ thông tin");
+		else 
+			alert("username: "+username + ", pass:" + password);
+	}
+</script>
+</head>
+<body>
+	<h1>Tạo biểu mẫu bằng thẻ form và input</h1>
+	
+	<h1>Đây là form đăng nhập</h1>
+	<form id="formLogin">
+		<p>User name<p>
+		<input name="username" type='text' value="" placeholder="đây là placeholder"/>
+		<p>Password<p>
+		<input name="password" type='password'/><p></p>
+		<button onclick="myFunction()">Submit</button>
+	</form>
+</body>
+</html>

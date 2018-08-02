@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<media ofset='UTF8'/>
+	<script>
+    	function myScript(){
+			// lấy giá trị nhập
+			//var nameInput = document.getElementById("fname").value;
+			//var nameInput = document.getElementsByClassName("fname")[0].value;
+			var nameInput = document.getElementsByName("fname")[0].value;
+			// logic
+			if(nameInput ==""){
+				alert('Bạn phải nhập dữ liệu');
+			} else {
+				document.getElementsByClassName("thongtin")[0].innerHTML = 'Bạn đã nhập: ' + nameInput;
+				//alert(document.getElementsByClassName("thongtin")[0].innerHTML );
+				return false;
+			}
+			
+			// thực hiện từ 0 tới 9
+			for(int i = 0; i < 10; i++){
+				alert(i);  // công việc thực hiện				
+			}
+			
+			
+		}
+    </script>
+
+</head>
+<body>	
+	<!--Form Name Start-->
+	<form action="#" onsubmit="return myScript();">
+    	Name: <input id="fname" class="fname" name ="fname" type="text" placeholder="Nhập thông tin...."/>
+        
+        <button onclick="myScript();">Check name</button>
+    </form>
+    <!--Form Name End-->
+	<p class="thongtin">Bạn đã nhập:</p>
+</body>
+
+</html>

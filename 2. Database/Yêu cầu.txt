@@ -1,0 +1,2 @@
+Cài đặt xampp
+Sử dụng mysql

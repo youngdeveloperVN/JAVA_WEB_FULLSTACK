@@ -1,0 +1,27 @@
+{
+	"employees": [{
+			"name": "Nam",
+			"age": 21,
+			"salary": "15",
+			"level": 1,
+			"job": "developer",
+			"admin": true
+		},
+		{
+			"name": "Binh",
+			"age": 21,
+			"salary": "15",
+			"level": 1,
+			"job": "developer",
+			"admin": true
+		},
+		{
+			"name": "Thanh",
+			"age": 23,
+			"salary": "12",
+			"level": 3,
+			"job": "developer",
+			"admin": true
+		}
+	]
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tạo navigator với menu ngang responsive</title>
+<meta charset="UTF-8">
+
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+/* 	RESET CSS START */
+a {
+	text-decoration: none /*Bỏ gạch chân thẻ a*/
+}
+
+ul {
+	list-style-type: none /*bỏ dấu chấm mặc định của thẻ ul*/
+}
+
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+body{
+	background-color: #ddd;
+}
+/* 	RESET CSS END */
+/* 	CUSTOM CSS START */
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+.clear{
+	clear: both;
+}
+/* 	CUSTOM CSS END */
+
+/*NAVIGATOR CSS PC START*/
+.icon {
+	display: none !important;
+}
+#navigator, ul.child{
+	background-color: #333;
+}
+#navigator a{
+	padding: 12px 20px;
+	display: block;
+	color: #ddd;
+}
+#navigator a:hover{
+	color: #333;
+	background-color: #ddd;
+}
+#navigator >  ul > li{
+	display: inline-block;
+	margin-left: -5px;
+}
+#navigator >  ul.left > li:first-child{
+	margin-left: 0px;
+}
+#navigator li.dropdown{
+	position: relative;
+}
+#navigator li.dropdown >  ul.child{
+	display: none;
+	position: absolute;
+}
+#navigator li.dropdown:hover >  ul.child{
+	display: block;
+}
+a.logo-home{
+  float: left;
+}
+/*NAVIGATOR CSS PC END*/
+
+/*MOBILE START*/
+@media screen and (max-width: 768px) {
+	/*CUSTOM CLASS MOBILE START*/
+	.left, .right {
+		float: none;
+		width: 100%;
+	}
+	/*CUSTOM CLASS MOBILE END*/
+
+	/*NAVIGATOR CSS MOBILE START*/
+	.icon {
+		display: block !important;
+		float: right;
+	}
+	#navigator >  ul > li{
+		display: block;
+	}
+	#navigator li.dropdown > ul.child {
+	    display: block;
+	    position: static;
+	    padding-left: 20px;
+	}
+	/*NAVIGATOR CSS MOBILE END*/
+}
+/*MOBILE END*/
+</style>
+
+</head>
+<body>
+	<!-- NAVIGATOR START -->
+	<div id="navigator">
+
+		<div class="nav-logo left">
+			<a href="#" class="logo-home">WebsiteName</a> 
+			<a
+				href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+			<div class="clear"></div>
+		</div>
+		<ul class="left">
+			<li><a href="#">Giới thiệu</a></li>
+			<li class="dropdown"><a href="#">Tin tức </a>
+				<ul class="child">
+					<li><a href="#">Menu2</a></li>
+					<li><a href="#">Menu2</a></li>
+				</ul></li>
+			<li><a href="#">Sản phẩm</a></li>
+			<li><a href="#">Liên hệ</a></li>
+		</ul>
+
+		<ul class="right">
+			<li><a href="#">Login</a></li>
+			<li><a href="#">Register</a></li>
+		</ul>
+		<div class="clear"></div>
+	</div>
+	<!--NAVIGATOR END -->
+	
+	<!-- CONTENT START -->
+	<div>
+		Content
+	</div>
+	<!--CONTENT END -->
+
+</body>
+</html>
