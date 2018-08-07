@@ -11,4 +11,5 @@ public class ProtectedSubClass extends ProtectedSuperClass {
 		// TODO Auto-generated method stub
 		return super.getId();
 	}
+	
 }
