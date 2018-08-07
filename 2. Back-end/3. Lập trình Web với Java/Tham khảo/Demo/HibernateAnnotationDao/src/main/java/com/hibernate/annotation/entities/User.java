@@ -18,7 +18,6 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "user")
 @NamedQuery(name = "User.findAll", query = "SELECT u FROM User u")
-@NamedQuery(name = "User.findById", query = "SELECT u FROM User u WHERE u.id:idUser")
 public class User implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
@@ -29,7 +28,7 @@ public class User implements Serializable {
 
 	@Id
 	@Column(name = "id")
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int idUser;
 
 	private String pass;

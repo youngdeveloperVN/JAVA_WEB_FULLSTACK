@@ -1,25 +1,16 @@
-package com.web;
+package com.hibernate.annotation;
 
 import java.util.List;
 
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
-import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
-import org.hibernate.cfg.Configuration;
 
+import com.hibernate.annotation.entities.User;
+import com.hibernate.annotation.utility.HibernateUtil;
 public class Main {
-	private static SessionFactory factory;
 
 	public static void main(String[] args) {
-
-		try {
-			factory = new Configuration().configure().buildSessionFactory();
-		} catch (Throwable ex) {
-			System.err.println("Failed to create sessionFactory" + ex);
-			throw new ExceptionInInitializerError(ex);
-		}
-
 		Main main = new Main();
 
 		Integer user1 = main.addUser("tuan", "Ali");
@@ -29,7 +20,7 @@ public class Main {
 		main.listUsers();
 
 		/* Update User's records */
-		main.updateUser(1, "t3h");
+//		main.updateUser(1, "t3h");
 
 		/* Delete an User from the database */
 		main.deleteUser(user2);
@@ -40,7 +31,7 @@ public class Main {
 
 	/* Method to CREATE an User in the database */
 	public Integer addUser(String username, String pass) {
-		Session session = factory.openSession();
+		Session session = HibernateUtil.openSession();
 		Transaction tx = null;
 		Integer userId = null;
 
@@ -60,7 +51,7 @@ public class Main {
 	}
 
 	public void listUsers() {
-		Session session = factory.openSession();
+		Session session = HibernateUtil.openSession();
 		Transaction tx = null;
 
 		try {
@@ -83,7 +74,7 @@ public class Main {
 
 	/* Method to UPDATE salary for an User */
 	public void updateUser(Integer id, String pass) {
-		Session session = factory.openSession();
+		Session session = HibernateUtil.openSession();
 		Transaction tx = null;
 
 		try {
@@ -103,7 +94,7 @@ public class Main {
 
 	/* Method to DELETE an User from the records */
 	public void deleteUser(Integer UserID) {
-		Session session = factory.openSession();
+		Session session = HibernateUtil.openSession();
 		Transaction tx = null;
 
 		try {
