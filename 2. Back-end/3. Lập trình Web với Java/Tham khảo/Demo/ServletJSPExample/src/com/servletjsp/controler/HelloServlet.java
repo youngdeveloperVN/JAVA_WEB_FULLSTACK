@@ -31,13 +31,13 @@ public class HelloServlet extends HttpServlet {
 			Info model = new Info(name, gender);
 			req.setAttribute("info", model);
 			
-			List<Info> models = new ArrayList<Info>();
-			models.add(model);
-			models.add(model);
-			models.add(model);
-			models.add(model);
-			models.add(model);
-			req.setAttribute("infolist", models);
+				List<Info> models = new ArrayList<Info>();
+				models.add(model);
+				models.add(model);
+				models.add(model);
+				models.add(model);
+				models.add(model);
+				req.setAttribute("infolist", models);
 			// 4. Chuyển tiếp đến View để hiển thị info
 			req.getRequestDispatcher("InfoList.jsp").forward(req, resp);
 		} else {
