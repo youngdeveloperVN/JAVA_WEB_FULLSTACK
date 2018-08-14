@@ -1,0 +1,98 @@
+  /*RESET CSS START*/
+      *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+      a{
+        text-decoration: none;
+      }
+      ul{
+        list-style-type: none;
+      }
+      /*RESET CSS END*/
+
+      /*CUSTOM CLASS START*/
+      .clear{
+        clear: both;
+      }
+
+      .icon{
+        display: none !important;
+      }
+      .left{
+        float: left;
+      }
+      .right{
+        float: right;
+      }
+      /*CUSTOM CLASS END*/
+
+    
+      /*NAVIGATOR COMMON START*/
+      #navigator{
+        background-color: #333;
+      }
+		.logo-home{
+        float: left;
+      }
+      #navigator a{
+        padding: 12px 24px;
+        display: block;
+
+      }
+
+      #navigator > ul > li{
+        display: inline-block;
+
+      }
+      li.dropdown{
+        position: relative;
+      }
+
+      ul.child{
+        display: none;
+        position: absolute;
+      }
+
+      li.dropdown:hover .child {
+        display: block;
+      }
+      /*NAVIGATOR COMMON END*/
+
+	  /*MOBILE AND TABLET START*/
+      @media screen and (max-width: 768px) {
+      
+      	/*CUSTOM CLASS MOBILE START*/
+        .left, .right{
+          float: none;
+          width: 100%;
+        }
+        /*CUSTOM CLASS MOBILE END*/
+        
+        /*NAVIGATOR MOBILE START*/
+        .icon{
+          display: block !important;
+          position: absolute;
+          right: 0px;
+        }
+        #navigator ul{
+          display: none;
+        }
+        div.nav-logo{
+          position: relative;
+        }
+
+        #navigator > ul > li{
+          display: block;
+        }
+        ul.child{
+          display: none;
+          position: relative;
+        }
+		/*NAVIGATOR MOBILE END*/
+        
+        /*OTHER START*/
+        /*OTHER END*/
+      }
+       /*MOBILE AND TABLET END*/
