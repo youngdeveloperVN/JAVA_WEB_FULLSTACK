@@ -1722,7 +1722,7 @@ USE `hibernatedemo`;
 --
 
 CREATE TABLE `product` (
-  `idProduct` int(11) NOT NULL,
+  `idQuestion` int(11) NOT NULL,
   `name` varchar(200) NOT NULL,
   `description` varchar(200) NOT NULL,
   `idType` int(11) NOT NULL
@@ -1732,7 +1732,7 @@ CREATE TABLE `product` (
 -- Dumping data for table `product`
 --
 
-INSERT INTO `product` (`idProduct`, `name`, `description`, `idType`) VALUES
+INSERT INTO `product` (`idQuestion`, `name`, `description`, `idType`) VALUES
 (3, 'Sach2', 'Day la sach2', 5);
 
 -- --------------------------------------------------------
@@ -1774,7 +1774,7 @@ CREATE TABLE `user` (
 -- Indexes for table `product`
 --
 ALTER TABLE `product`
-  ADD PRIMARY KEY (`idProduct`),
+  ADD PRIMARY KEY (`idQuestion`),
   ADD KEY `idType` (`idType`);
 
 --
@@ -1797,7 +1797,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
-  MODIFY `idProduct` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `idQuestion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `type`
 --
